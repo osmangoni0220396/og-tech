@@ -1,142 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OG TECH</title>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    />
     <!-- Tailwind CSS Tailwind Element -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ["Inter", "sans-serif"],
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
             },
-        };
+          },
+        },
+      };
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header Start -->
-    <header class="container mx-auto">
-        <!-- Navbar Area Start -->
-        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com/" class="flex items-center">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">OG Tech</span>
-                </a>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
-                        class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Deals</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Success</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="border-solid border-2 border-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-600 hover:text-white">Register</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar Area End -->
-        <!-- Carousel Area Start -->
-        <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
-            <div class="carousel-inner relative w-full overflow-hidden">
-                <div class="carousel-item relative float-left w-full">
-                    <img src="images/cover/cover-1.png" class="block w-full blackish" alt="..." />
-                    <div class="carousel-caption absolute text-center">
-                        <h5 class="text-xl sm:text-3xl md:text-5xl">Great Place For Learnig</h5>
-                        <p class="my-3 text-sm sm:text-base md:text-xl">You will get best experiance of learnig here by
-                            the great mentor</p>
-                        <a href="#"
-                            class="border-solid border-1 bg-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-500 hover:text-white">Get
-                            Start</a>
-                    </div>
-                </div>
-                <div class="carousel-item active relative float-left w-full">
-                    <img src="images/cover/cover-2.jpg" class="block w-full blackish" alt="..." />
-                    <div class="carousel-caption absolute text-center">
-                        <h5 class="text-xl sm:text-3xl md:text-5xl">Get Started Digital Learning</h5>
-                        <p class="my-3 text-sm sm:text-base md:text-xl">It is a long established fact that a reader will
-                            be distracted by the readable content of a page when looking at its layout.</p>
-                        <a href="#"
-                            class="border-solid border-1 bg-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-500 hover:text-white">Get
-                            Start</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item relative float-left w-full">
-                    <img src="images/cover/cover-3.jpg" class="block w-full blackish" alt="..." />
-                    <div class="carousel-caption hidden md:block absolute text-center">
-                        <h5 class="text-xl sm:text-3xl md:text-5xl">We Have Worlds Best Mentor</h5>
-                        <p class="my-3 text-sm sm:text-base md:text-xl">It is our pride that we have worlds best mentor.
-                            They are ready to help you with your problem. You get fun</p>
-                        <a href="#"
-                            class="border-solid border-1 bg-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-500 hover:text-white">Get
-                            Start</a>
-                    </div>
-                </div>
-            </div>
-            <button
-                class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <header class="container mx-auto my-3">
+      <!-- Navbar Area Start -->
+      <nav
+        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 my-5"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="https://flowbite.com/" class="flex items-center">
+            <span
+              class="self-center text-2xl font-extrabold font-semibold whitespace-nowrap dark:text-white"
+              >OG Tech</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Deals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Success</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border-solid border-2 border-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-600 hover:text-white"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- Carousel Area End -->
+      </nav>
+      <!-- Navbar Area End -->
+      <!-- Carousel Area Start -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide relative my-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="images/cover/cover-1.png"
+              class="block w-full blackish"
+              alt="..."
+            />
+            <div class="carousel-caption absolute text-center">
+              <h5 class="text-xl sm:text-3xl md:text-5xl">
+                Great Place For Learnig
+              </h5>
+              <p class="my-3 text-sm sm:text-base md:text-xl">
+                You will get best experiance of learnig here by the great mentor
+              </p>
+              <a
+                href="#"
+                class="border-solid border-1 bg-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-500 hover:text-white"
+                >Get Start</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="images/cover/cover-2.jpg"
+              class="block w-full blackish"
+              alt="..."
+            />
+            <div class="carousel-caption absolute text-center">
+              <h5 class="text-xl sm:text-3xl md:text-5xl">
+                Get Started Digital Learning
+              </h5>
+              <p class="my-3 text-sm sm:text-base md:text-xl">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <a
+                href="#"
+                class="border-solid border-1 bg-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-500 hover:text-white"
+                >Get Start</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="images/cover/cover-3.jpg"
+              class="block w-full blackish"
+              alt="..."
+            />
+            <div class="carousel-caption absolute text-center">
+              <h5 class="text-xl sm:text-3xl md:text-5xl">
+                We Have Worlds Best Mentor
+              </h5>
+              <p class="my-3 text-sm sm:text-base md:text-xl">
+                It is our pride that we have worlds best mentor. They are ready
+                to help you with your problem. You get fun
+              </p>
+              <a
+                href="#"
+                class="border-solid border-1 bg-indigo-600 rounded-lg px-6 py-2 hover:bg-indigo-500 hover:text-white"
+                >Get Start</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel Area End -->
     </header>
     <!-- Header End -->
-    
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
-</body>
+    <!-- Main Area Start -->
+    <main class="container mx-auto my-3">
+        <!-- Courses Section Start -->
+        <section class="courses my-20">
+            <h2 class="text-center text-5xl py-5">Discover Our Popular Courses</h2>
+        <p class="text-center text-base text-gray-400 p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <div class="grid lg:grid-cols-2 md:span-col-2 my-5">
+            <div class="flex flex-col sm:flex-row md:flex-row rounded-lg bg-white shadow-lg">
+              <img class="w-auto p-4 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="images/course/course-1.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-2xl font-medium mb-2">Fundamental Of UI/UX Design</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    The five main principles of UX design. There are many important principles within UX design
+                </p>
+                <p class="text-indigo-700 text-xl font-bold">Price: $20</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-row rounded-lg bg-white shadow-lg">
+              <img class="w-auto p-4 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="images/course/course-2.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Javascript Basic to advanced</h5>
+                <p class="text-gray-700 text-base mb-4">
+                   JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+                </p>
+                <p class="text-indigo-700 text-xl font-bold">Price: $25</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-row rounded-lg bg-white shadow-lg">
+              <img class="w-auto p-4 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="images/course/course-3.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Fullstack Web Development</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    A full stack web developer is a person who can develop both client and server software. In addition to mastering HTML and CSS,
+                </p>
+                <p class="text-indigo-700 text-xl font-bold">Price: $45</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-row rounded-lg bg-white shadow-lg">
+              <img class="w-auto p-4 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="images/course/course-4.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Digital Marketing</h5>
+                <p class="text-gray-700 text-base mb-4">
+                   Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication.
+                </p>
+                <p class="text-indigo-700 text-xl font-bold">Price: $35</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-row rounded-lg bg-white shadow-lg">
+              <img class="w-auto p-4 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="images/course/course-5.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Photography Basic Rules</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    9 Top Photography Composition Rules You Need To Know.1. Rule of thirds · 2. The Golden Ratio · 3. Leading lines · 4. Diagonals....
+                </p>
+                <p class="text-indigo-700 text-xl font-bold">Price: $20</p>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-row rounded-lg bg-white shadow-lg">
+              <img class="w-auto p-4 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="images/course/course-6.png" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Motion Graphics</h5>
+                <p class="text-gray-700 text-base mb-4">
+                    Motion graphics (sometimes mograph) are pieces of animation or digital footage which create the illusion of motion or rotation, and are usually combined with audio for use in multimedia projects
+                </p>
+                <p class="text-indigo-700 text-xl font-bold">Price: $30</p>
+              </div>
+            </div>
+        </div>
+        <p class="text-center my-10">
+            <a href="#" class="border-solid border-1 text-white bg-indigo-600 rounded-lg px-6 py-3 hover:bg-indigo-500 hover:text-white">See More Courses</a>
+        </p>
+        </section>
+        <!-- Courses Section End -->
+        <!-- Elearnig Section Start -->
+        <section class="elearnig my-20">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4">
+                <div class="sm:px-2 md:px-2">
+                    <img src="images/working.png" class="sm:w-full md:w-full lg:w-auto" alt="Working Men">
+                </div>
+                <div class="p-4 flex justify-center items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">Explore The elearning Institute</h2>
+                        <p class="text-sm my-5 text-gray-500">
+                            There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look even slightly believable. If you are going
+                            to use a passage of Lorem Ipsum, you need to be sure.
+                        </p>
+                        <p class="text-sm my-5 text-gray-500">
+                            Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.
+                        </p>
+                        <div class="flex justify-between text-center">
+                            <div>
+                                <h2 class="text-xl font-extrabold">3.2K+</h2>
+                                <span class="text-gray-500 font-bold">Online Courses</span>
+                            </div>
+                            <div >
+                                <h2 class="text-xl font-extrabold">3.2K+</h2>
+                                <span class="text-gray-500 font-bold">Online Courses</span>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-extrabold">3.2K+</h2>
+                                <span class="text-gray-500 font-bold">Online Courses</span>
+                            </div>
+                        </div>
+                        <p class="my-10">
+                            <a href="#" class="border-solid border-1 text-white bg-indigo-600 rounded-lg px-6 py-3 hover:bg-indigo-500 hover:text-white">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elearnig Section End -->
+    </main>
+    <!-- Main Area End -->
 
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  </body>
 </html>
